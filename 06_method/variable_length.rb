@@ -6,6 +6,8 @@ variable_args("one")
 variable_args("one", "two")
 variable_args("one", "two", "three")
 
+puts "--------"
+
 class Example
   def method_1(*)
     method_2(*)
@@ -18,7 +20,10 @@ end
 
 puts Example.new.method_1(1, 2, 3)
 
+puts "---------"
+
 # you can put the splat parameter anywhere in a method's parameter list.
+
 def split_apart(first, *splat, last)
   puts "First: #{first.inspect}, splat: #{splat.inspect}, last: #{last.inspect}"
 end

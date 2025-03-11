@@ -21,8 +21,8 @@ hello("test")
 def a_method_name; end
 
 # a method may end with ?, ! or =
-1.even?
-2.even?
+puts 1.even?
+puts 2.even?
 
 sample = "this is my code"
 puts sample.chop
