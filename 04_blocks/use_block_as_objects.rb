@@ -9,7 +9,7 @@ class ProcExample
 end
 
 eg = ProcExample.new
-eg.pass_in_block { |param| puts "The parameter is #{param}" }
+eg.pass_in_block { |x| puts "The parameter is #{x}" }
 eg.use_proc(99)
 # Output:
 # The parameter is 99
